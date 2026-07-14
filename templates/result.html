@@ -4,15 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <title>診断結果</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
     <h1>診断結果</h1>
 
-    <p>偏差値 : {{ score }}</p>
-    <p>志望分野 : {{ faculty }}</p>
-    <p>地域 : {{ area }}</p>
+    <div class="result-card">
+
+        <p>偏差値 : {{ score }}</p>
+        <p>志望分野 : {{ faculty }}</p>
+        <p>地域 : {{ area }}</p>
+
+    </div>
+
+    <div class="result-card">
+
+        <h2>おすすめ大学</h2>
+
+        {% for university in recommended_universities %}
+            <p>{{ university }}</p>
+        {% endfor %}
+        
+    </div>
+    
 
     <a href="/">戻る</a>
 
