@@ -13,11 +13,12 @@ def result():
     faculty = request.form["faculty"]
     area = request.form["area"]
 
-    return f"""
-    偏差値 : {score}<br>
-    学部 : {faculty}<br>
-    地域 : {area}
-    """
+    return render_template(
+        "result.html",
+        score=score,
+        faculty=faculty,
+        area=area
+    )
 
 def home():
     return render_template("index.html")
