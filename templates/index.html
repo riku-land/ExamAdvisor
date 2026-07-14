@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=""ja">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <title>受験アドバイザー</title>
@@ -9,17 +9,20 @@
 
     <h1>受験アドバイザー</h1>
 
-    <form>
+    <form action="/result" method="post">
 
-        <label>志望学部</label><br>
-        <select>
+        <label for="score">現在の偏差値</label><br>
+        <input type="number" id="score" name="score"><br><br>
+
+        <label>志望分野</label><br>
+        <select id="faculty" name="faculty">
             <option>情報工学</option>
             <option>機械工学</option>
             <option>経済学</option>
         </select><br><br>
 
         <label>地域</label><br>
-        <select>
+        <select id="area" name="area">
             <option>関西</option>
             <option>関東</option>
             <option>中部</option>
