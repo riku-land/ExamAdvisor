@@ -38,9 +38,25 @@ def home():
 @app.route("/result", methods=["POST"])
 def result():
 
-    score = int(request.form["score"])
+    score_text = request.form["score"]
     faculty = request.form["faculty"]
     area = request.form["area"]
+
+
+    if score_text == "":
+        return render_template(
+            "error.html",
+            message="偏差値を入力してください"
+        )
+
+    score = int(score_text)
+
+    if score < 20 or score > 80:
+        return render_template(
+            "error.html",
+            message="偏差値は20~80で入力してください"
+        )
+    
 
     universities = recommend_universities(
         score,
