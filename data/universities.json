@@ -1,0 +1,38 @@
+[
+    {
+        "name": "関西学院大学",
+        "faculty": "情報工学",
+        "area": "関西", 
+        "score": 60
+    },
+    {
+        "name": "大阪公立大学",
+        "faculty": "情報工学",
+        "area": "関西", 
+        "score": 60
+    },
+    {
+        "name": "立命館大学",
+        "faculty": "情報工学",
+        "area": "関西", 
+        "score": 55
+    },
+    {
+        "name": "近畿大学",
+        "faculty": "情報工学",
+        "area": "関西", 
+        "score": 45
+    },
+    {
+        "name": "龍谷大学",
+        "faculty": "情報工学",
+        "area": "関西", 
+        "score": 45
+    },
+    {
+        "name": "東京電機大学",
+        "faculty": "情報工学",
+        "area": "関東", 
+        "score": 50
+    }
+]
